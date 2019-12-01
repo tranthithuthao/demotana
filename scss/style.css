@@ -1,0 +1,268 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  color: #3b434c;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
+/* close commented backslash hack */
+li {
+  list-style: none;
+}
+
+.slider, .slider .slider_content .box_slider_button, .services .sr_box, .services .sr_box .sr_icon, .box_email, .our_works .portfolio_content .portfolio_txt, .clients .clients_say li {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.services, .our_works .portfolio {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.inner {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+h3 {
+  margin-bottom: 25px;
+  font-size: 35px;
+  text-align: center;
+}
+h3 span {
+  color: #f7600e;
+}
+
+.header {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  z-index: 2;
+}
+.header .inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  padding-left: 46px;
+}
+
+.nav {
+  padding-right: 17px;
+}
+
+.slider {
+  align-items: center;
+  width: 100%;
+  height: 800px;
+  position: relative;
+  background: url(../images/main01.png) 0 center no-repeat;
+  text-align: center;
+}
+.slider .slider_content {
+  color: #fff;
+}
+.slider .slider_content .slider_title {
+  margin-bottom: 35px;
+  font-size: 70px;
+}
+.slider .slider_content .slider_title span {
+  color: #f7600e;
+}
+.slider .slider_content .slider_txt {
+  font-size: 25px;
+  margin-bottom: 63px;
+}
+.slider .slider_content .sl_bt a {
+  color: #fff;
+}
+.slider .slider_content .sl_bt01 {
+  margin-right: 27px;
+}
+.slider .slider_button_scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  transform: translate(-50%, 0);
+}
+
+.index_button a {
+  display: block;
+  width: 210px;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  color: #3b434c;
+  text-align: center;
+  text-decoration: none;
+}
+.index_button a:hover {
+  border-color: #f7600e;
+  background-color: #f7600e;
+  font-size: 16px;
+}
+
+.services {
+  padding: 100px 0;
+}
+.services .sr_box {
+  align-items: center;
+  text-align: center;
+  width: 260px;
+}
+.services .sr_box .sr_icon {
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 25px;
+  border-radius: 50%;
+  border: 1px solid rgba(59, 67, 76, 0.3);
+}
+
+.box_email {
+  align-items: center;
+  background: url(../images/idx_bg_email.png) 0 center no-repeat;
+  padding: 100px 0;
+}
+.box_email .email_conteent {
+  display: flex;
+}
+.box_email .email_conteent .your_email input {
+  width: 562px;
+  margin-right: 30px;
+  border-radius: 10px;
+  padding: 15px 20px;
+  border: none;
+}
+.box_email .email_conteent .button_email a {
+  display: block;
+  width: 270px;
+  border-radius: 10px;
+  background-color: #f7600e;
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.our_txt {
+  font-size: 16px;
+  text-align: center;
+}
+.our_txt.last {
+  margin-bottom: 100px;
+}
+
+.our_works {
+  padding: 100px 0;
+}
+.our_works .portfolio_content {
+  position: relative;
+  border-radius: 10px;
+  width: 360px;
+  height: 360px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.our_works .portfolio_content .portfolio_txt {
+  align-items: center;
+  padding: 30px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(247, 96, 14, 0.9);
+  transition: all 1s ease;
+  color: #fff;
+}
+.our_works .portfolio_content .portfolio_txt:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.our_works .portfolio_content .protfolio_ttl {
+  margin-bottom: 25px;
+  font-size: 25px;
+}
+.our_works .portfolio_content .protfolio_button a {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.our_works .portfolio_content .protfolio_button a:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #f7600e;
+}
+.our_works .portfolio_btlast a {
+  margin: 70px auto 0;
+  border-color: rgba(59, 67, 76, 0.2);
+}
+
+.clients {
+  background: url(../images/idx_bg_arrows.jpg) 0 center no-repeat;
+  padding: 100px 0;
+}
+.clients .clients_say {
+  color: #fff;
+  text-align: center;
+}
+.clients .clients_say li {
+  flex-direction: column;
+  align-items: center;
+}
+.clients .img_say {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+.clients .box_txt_say {
+  margin-bottom: 50px;
+  font-size: 25px;
+  line-height: 1.6;
+}
+.clients .name_say {
+  font-size: 18px;
+}
+
+.our_team {
+  padding: 100px 0;
+}
+
+/*# sourceMappingURL=style.css.map */
